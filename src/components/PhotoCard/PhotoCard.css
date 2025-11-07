@@ -1,0 +1,58 @@
+/*  BLOCK - Core PhotoCard styles  */
+.photo-card {
+border-radius: 8px;
+overflow: hidden;
+cursor: pointer;
+max-width: 300px;
+margin: 2rem auto;
+box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+.photo-card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-card__content {
+    padding: 1rem;
+}
+
+.photo-card__title {
+    margin: 0 0 .5rem 0;
+    font-size: 1.25rem;
+    font-weight:  600;
+}
+
+
+.photo-card__description {
+    margin: 0;
+    color: #666;
+    font-size: .875rem;
+}
+/* Hover effects for better UX */
+.photo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    transition: all .2s ease;
+}
+/* Focus styles for accessibility  */
+.photo-card:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+/*  Download button styling  */
+.photo-card__download {
+    background: #007acc;
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: .875rem;
+    margin-top: .5rem;
+}
+
+.photo-card__download:hover {
+    background: #005a9e;
+}
