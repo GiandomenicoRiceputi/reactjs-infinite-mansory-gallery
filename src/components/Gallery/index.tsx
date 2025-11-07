@@ -24,6 +24,7 @@ export const Gallery: React.FC<GalleryProps> = ({ images, isLoading = false, onI
 
     }
     return (
+
         <div className="gallery">
             {images.map((image, index) => (
                 <PhotoCard
@@ -37,5 +38,7 @@ export const Gallery: React.FC<GalleryProps> = ({ images, isLoading = false, onI
                 />
             ))}
         </div>
+
+
     );
 }
